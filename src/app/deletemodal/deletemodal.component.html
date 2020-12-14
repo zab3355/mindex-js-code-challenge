@@ -1,0 +1,14 @@
+<div class="modal-holder" (click)="closeModal()"></div>
+<div class="modal-body">
+  <h1 class="delete-title">Delete Direct Report</h1>
+<p class="p-modal">
+    Permamantly delete direct report {{data.firstName}} {{data.lastName}}? This action cannot be undone.
+</p>
+<section>
+    <div class="button-row">
+      <button class="modal-button-left" (click)="submit()">OK</button>
+      <button class="modal-button-right" (click)="cancel()">CANCEL </button>
+
+    </div>
+</section>
+</div>

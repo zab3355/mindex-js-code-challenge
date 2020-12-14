@@ -1,0 +1,33 @@
+<div class="modal-holder" (click)="closeModal()"></div>
+<div class="modal-body">
+
+  <h1 class="edit-title">Update Compensation</h1>
+  <h4 class="matfields">
+      <mat-form-field>
+        <input matInput [(ngModel)]="data.firstName" placeholder="First Name"/>
+      </mat-form-field>
+  </h4>
+  <h4 class="matfields">
+      <mat-form-field>
+        <input matInput [(ngModel)]="data.lastName" placeholder="Last Name" />
+      </mat-form-field>
+  </h4>
+  <h4 class="matfields">
+      <mat-form-field>
+        <input matInput [(ngModel)]="data.position" placeholder="Position" />
+      </mat-form-field>    
+  </h4>
+  <h4 class="matfields">
+      <mat-form-field> 
+          <input matInput [(ngModel)]="data.compensation" placeholder="Compensation"/>
+      </mat-form-field>
+  </h4>
+  <section>
+      <div class="button-row">
+        <button class="modal-button-left" [mat-dialog-close]="data">Update</button>
+        <button class="modal-button-right" (click)="cancel()">Cancel</button>
+
+      </div>
+  </section>
+
+</div>

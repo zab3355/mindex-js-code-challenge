@@ -1,0 +1,25 @@
+@import '../../styles/modal.scss';
+
+.body-holder {
+    text-align: center;
+}
+
+.modal-body {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 400px;
+    margin: 325px auto 0% auto;
+    padding: 80px;
+    padding-bottom: 50px;
+    border-radius: 0px;
+    border: 1px solid #dadada;
+}
+
+.delete-title{
+    text-align: center;
+    font-family: "Nobile-Bold";
+    font-size: 30px;
+    color: #5d60ff;
+    margin-top: -10px;
+}

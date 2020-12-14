@@ -1,0 +1,30 @@
+<mat-card class="employee">
+  <mat-card-header>
+    <mat-card-title>{{employee.firstName}} {{employee.lastName}}, {{employee.position}}</mat-card-title>
+    <mat-card-subtitle>Employee ID: {{employee.id}} | Direct Reports: {{employees.length}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <h2 class="direct-reports-tab">Direct Reports</h2>
+      <mat-list>
+        <div class="align-card">
+          <div *ngFor="let reports of directReports; let checkReports = last">
+            <mat-list-item>
+              <h3 mat-line>{{reports.firstName}} {{reports.lastName}}, {{reports.position}}</h3>
+              <button class="button-styles" aria-hidden="false" aria-label="Delete Modal" (click)="deleteModal(reports)">
+                <mat-icon aria-hidden="false">delete</mat-icon>
+              </button>
+              <button class="button-styles" aria-hidden="false" aria-label="Edit Modal" (click)="editModal(reports)">
+                <mat-icon aria-hidden="false">edit</mat-icon>
+              </button>
+            </mat-list-item>
+
+          </div>
+          <div *ngIf="!employees.length">
+            <mat-list-item>This employee has no reports</mat-list-item>
+          </div>
+        </div>
+    </mat-list>
+    
+    </mat-card-content> 
+</mat-card>
+<ng-template #modalHolder></ng-template>

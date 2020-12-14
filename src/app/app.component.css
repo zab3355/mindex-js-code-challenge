@@ -1,0 +1,25 @@
+@font-face {
+  font-family: Nobile-Bold;
+  src: url(../assets/fonts/Nobile-Bold.ttf);
+}
+
+@font-face {
+  font-family: Nobile;
+  src: url(../assets/fonts/Nobile-Medium.ttf);
+}
+
+.page-title {
+  text-align: center;
+  font-family: "Nobile-Bold";
+  font-size: 45px;
+  margin-top: 60px;
+  color: #5d60ff;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-family: "Nobile";
+  font-size: 25px;
+  margin-top: 20px;
+  color: #000;
+}

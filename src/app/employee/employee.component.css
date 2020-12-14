@@ -1,0 +1,55 @@
+.mat-card {
+    background-color: #fff;
+    color: #fff;
+    border: 1px solid #dadada;
+  }
+  .mat-card-title {
+    color: #4c51bf;
+  }
+  .mat-card-content {
+    padding: 1em;
+    background-color: #dadada;
+    color: black;
+    border-radius: .25rem;
+  }
+
+  .mat-line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .align-card {
+    padding: 10px;
+  }
+  .employee {
+      width: 1000px;
+      height: 100%;
+  }
+  
+  .direct-reports-tab {
+    background-color: #6d6d6d;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .button-styles {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    margin-top: -40px;
+    padding: 10px;
+    float: right;
+    display: inline-flex;
+  }
+
+  .button-styles:hover {
+    color: #4c51bf;
+  }
+
+  .icon-styles{
+    width: 20px;
+    height: 20px;
+  }
